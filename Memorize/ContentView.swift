@@ -54,7 +54,7 @@ struct CardView: View{
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let game = EmojiMemoryGame()
+        let game = EmojiMemoryGame(gameTheme: .halloween)
         ContentView(viewModel: game)
             .preferredColorScheme(.dark)
     }
